@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		13F5B95E2570F174E648291E /* Pods_IWUserMainMoudle_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD45C6C259E542CAEA93BDA /* Pods_IWUserMainMoudle_Tests.framework */; };
 		19B2859DE1C05E1BB66FE968 /* Pods_IWUserMainMoudle_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C17610D1239F5DDD9FAD8A /* Pods_IWUserMainMoudle_Example.framework */; };
+		433F5F0F21C3AD7A00A644C4 /* IW2.m in Sources */ = {isa = PBXBuildFile; fileRef = 433F5F0E21C3AD7A00A644C4 /* IW2.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,7 +39,9 @@
 
 /* Begin PBXFileReference section */
 		093515712BBC3E6F93993FA9 /* Pods-IWUserMainMoudle_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IWUserMainMoudle_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IWUserMainMoudle_Tests/Pods-IWUserMainMoudle_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0EF75A19C93A225FD6D6466A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0EF75A19C93A225FD6D6466A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		433F5F0D21C3AD7A00A644C4 /* IW2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IW2.h; sourceTree = "<group>"; };
+		433F5F0E21C3AD7A00A644C4 /* IW2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IW2.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* IWUserMainMoudle_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IWUserMainMoudle_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,11 +62,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7D811B1C5F3B552E70A9A858 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7D811B1C5F3B552E70A9A858 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ABE6D77C3E1EE63487DB469 /* Pods-IWUserMainMoudle_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IWUserMainMoudle_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IWUserMainMoudle_Tests/Pods-IWUserMainMoudle_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DD45C6C259E542CAEA93BDA /* Pods_IWUserMainMoudle_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IWUserMainMoudle_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A76A87CE9A31B0741840872D /* IWUserMainMoudle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = IWUserMainMoudle.podspec; path = ../IWUserMainMoudle.podspec; sourceTree = "<group>"; };
+		A76A87CE9A31B0741840872D /* IWUserMainMoudle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IWUserMainMoudle.podspec; path = ../IWUserMainMoudle.podspec; sourceTree = "<group>"; };
 		C9BB416ECE8935099335B2AD /* Pods-IWUserMainMoudle_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IWUserMainMoudle_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IWUserMainMoudle_Example/Pods-IWUserMainMoudle_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E6D2A341270C9CF589538DFF /* Pods-IWUserMainMoudle_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IWUserMainMoudle_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IWUserMainMoudle_Example/Pods-IWUserMainMoudle_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E8C17610D1239F5DDD9FAD8A /* Pods_IWUserMainMoudle_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IWUserMainMoudle_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +151,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* IWViewController.h */,
 				6003F5A6195388D20070C39A /* IWViewController.m */,
+				433F5F0D21C3AD7A00A644C4 /* IW2.h */,
+				433F5F0E21C3AD7A00A644C4 /* IW2.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -385,10 +390,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IWUserMainMoudle_Example/Pods-IWUserMainMoudle_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IWCategory/IWCategory.framework",
 				"${BUILT_PRODUCTS_DIR}/IWUserMainMoudle/IWUserMainMoudle.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IWCategory.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IWUserMainMoudle.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +412,7 @@
 			files = (
 				6003F59E195388D20070C39A /* IWAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* IWViewController.m in Sources */,
+				433F5F0F21C3AD7A00A644C4 /* IW2.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

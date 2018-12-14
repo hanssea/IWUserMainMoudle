@@ -7,12 +7,21 @@
 //
 
 #import "IWAppDelegate.h"
-
+#import "IWMainModuleAPI.h"
+#import "IWViewController.h"
+#import "IW2.h"
 @implementation IWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+            [IWMainModuleAPI addChildVC:[IWViewController new] normalImageName:@"homepage" selectedImageName:@"homepage_select" title:@"首页" isRequiredNavController:YES];
+            [IWMainModuleAPI addChildVC:[IW2 new] normalImageName:@"orderlist" selectedImageName:@"orderlist_select" title:@"正在进行" isRequiredNavController:YES];
+            [IWMainModuleAPI setGlobalBackGroundColor:[UIColor blackColor]];
+    
+    self.window.rootViewController =[IWMainModuleAPI rootTabBarCcontroller];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
