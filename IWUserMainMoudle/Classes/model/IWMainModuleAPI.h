@@ -66,7 +66,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)setBageValueforTabBar:(NSInteger)index bageValue:(NSInteger)bageValue;
 
-
 @end
 
 NS_ASSUME_NONNULL_END

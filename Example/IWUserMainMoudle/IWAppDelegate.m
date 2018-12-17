@@ -19,6 +19,13 @@
             [IWMainModuleAPI setGlobalBackGroundColor:[UIColor blackColor]];
     
     self.window.rootViewController =[IWMainModuleAPI rootTabBarCcontroller];
+    
+    
+//    self.gestureBaseView = [[BBGestureBaseView alloc] initWithFrame:CGRectMake(0, 0, appDelegate.window.frame.size.width, appDelegate.window.frame.size.height)];
+//    [self.window insertSubview:self.gestureBaseView belowSubview:self.window.rootViewController.view];
+//    self.gestureBaseView.hidden = YES;
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     

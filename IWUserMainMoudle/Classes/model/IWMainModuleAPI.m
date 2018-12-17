@@ -57,4 +57,5 @@
 + (void)setBageValueforTabBar:(NSInteger)index bageValue:(NSInteger)bageValue{
     [[IWTabBarCtrl shareInstance] setBageValueforTabBar:index bageValue:bageValue];
 }
+
 @end
