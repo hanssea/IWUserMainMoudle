@@ -37,8 +37,9 @@ NS_ASSUME_NONNULL_BEGIN
  @param selectedImageName 选中图片
  @param title 文字
  @param isRequired        是否需要包装导航控制器
+ @param IWNav        导航控制器
  */
-- (void)addChildVC: (UIViewController *)vc normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title isRequiredNavController:(BOOL)isRequired;
+- (void)addChildVC: (UIViewController *)vc normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title isRequiredNavController:(BOOL)isRequired IWNav:(UINavigationController *)IWNav;
 
 
 /**

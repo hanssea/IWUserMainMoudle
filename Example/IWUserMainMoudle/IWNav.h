@@ -1,8 +1,8 @@
 //
-//  IWNavCtrl.h
-//  IWUserMainModule_Example
+//  IWNav.h
+//  IWUserMainMoudle_Example
 //
-//  Created by maso on 2018/11/30.
+//  Created by maso on 2018/12/17.
 //  Copyright © 2018年 Hanssea. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IWNavCtrl : UINavigationController
+@interface IWNav : UINavigationController
 
 @end
 

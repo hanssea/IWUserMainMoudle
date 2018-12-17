@@ -30,7 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param title 文字
  @param isRequired        是否需要包装导航控制器
  */
-+ (void)addChildVC: (UIViewController *)vc normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title isRequiredNavController:(BOOL)isRequired;
+
++ (void)addChildsVC:(UIViewController *)vc normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title isRequiredNav:(BOOL)isRequired navVC:(UINavigationController *)navVC;
 
 /**
  *  设置全局的导航栏背景图片

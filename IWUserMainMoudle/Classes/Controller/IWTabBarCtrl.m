@@ -8,7 +8,6 @@
 
 #import "IWTabBarCtrl.h"
 #import "IWTabBar.h"
-#import "IWNavCtrl.h"
 #import "IWCategoryHeader.h"
 
 @interface IWTabBarCtrl ()
@@ -57,13 +56,13 @@
  @param selectedImageName 选中图片
  @param title 文字
  @param isRequired        是否需要包装导航控制器
+ @param IWNav        导航控制器
  */
-- (void)addChildVC: (UIViewController *)vc normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title isRequiredNavController:(BOOL)isRequired; {
+- (void)addChildVC: (UIViewController *)vc normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title isRequiredNavController:(BOOL)isRequired IWNav:(UINavigationController *)IWNav{
     
     if (isRequired) {
-        IWNavCtrl *nav = [[IWNavCtrl alloc] initWithRootViewController:vc];
+        UINavigationController *nav=[IWNav initWithRootViewController:vc];
         nav.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:[[UIImage imageNamed:normalImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-        
         [self addChildViewController:nav];
         
     }else {
@@ -71,7 +70,6 @@
     }
     
 }
-
 - (IWTabBar *)iwtabBar {
     if (!_iwtabBar) {
         // 创建wj_tabBar

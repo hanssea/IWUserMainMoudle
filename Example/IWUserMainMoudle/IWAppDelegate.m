@@ -10,13 +10,18 @@
 #import "IWMainModuleAPI.h"
 #import "IWViewController.h"
 #import "IW2.h"
+#import "IWNav.h"
 @implementation IWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-            [IWMainModuleAPI addChildVC:[IWViewController new] normalImageName:@"homepage" selectedImageName:@"homepage_select" title:@"首页" isRequiredNavController:YES];
-            [IWMainModuleAPI addChildVC:[IW2 new] normalImageName:@"orderlist" selectedImageName:@"orderlist_select" title:@"正在进行" isRequiredNavController:YES];
-            [IWMainModuleAPI setGlobalBackGroundColor:[UIColor blackColor]];
+
+    [IWMainModuleAPI addChildsVC:[IWViewController new] normalImageName:@"homepage" selectedImageName:@"homepage_select" title:@"首页" isRequiredNav:YES navVC:[IWNav alloc]];
+     [IWMainModuleAPI addChildsVC:[IW2 new] normalImageName:@"orderlist" selectedImageName:@"orderlist_select" title:@"正在进行" isRequiredNav:YES navVC:[IWNav alloc]];
+    
+    
+    
+    [IWMainModuleAPI setGlobalBackGroundColor:[UIColor blackColor]];
     
     self.window.rootViewController =[IWMainModuleAPI rootTabBarCcontroller];
     

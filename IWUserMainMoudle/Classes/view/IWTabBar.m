@@ -7,7 +7,6 @@
 //
 
 #import "IWTabBar.h"
-#import "IWNavCtrl.h"
 #import "IWCategoryHeader.h"
 
 

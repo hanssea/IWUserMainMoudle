@@ -14,12 +14,9 @@
 + (IWTabBarCtrl *)rootTabBarCcontroller {
     return [IWTabBarCtrl shareInstance];
 }
-
-
-+ (void)addChildVC: (UIViewController *)vc normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title isRequiredNavController:(BOOL)isRequired {
-    
-    [[IWTabBarCtrl shareInstance] addChildVC:vc normalImageName:normalImageName selectedImageName:selectedImageName title:title isRequiredNavController:isRequired];
-    
++ (void)addChildsVC:(UIViewController *)vc normalImageName: (NSString *)normalImageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title isRequiredNav:(BOOL)isRequired navVC:(UINavigationController *)navVC
+{
+    [[IWTabBarCtrl shareInstance]addChildVC:vc normalImageName:normalImageName selectedImageName:selectedImageName title:title isRequiredNavController:isRequired IWNav:navVC];
 }
 
 /**
