@@ -43,6 +43,12 @@
     
     NSInteger count = self.items.count;
     
+    if (IWMoreIphoneX) {
+        for (UITabBarItem *item in self.items) {
+            [item setTitlePositionAdjustment:UIOffsetMake(0, -15)];
+        }
+    }
+    
     //1. 遍历所有的子控件
     NSArray *subViews = self.subviews;
 
