@@ -43,23 +43,18 @@
     
     NSInteger count = self.items.count;
     
-    for (UITabBarItem *item in self.items) {
-        [item setTitlePositionAdjustment:UIOffsetMake(0, -15)];
-    }
-    
-    // 1. 遍历所有的子控件
+    //1. 遍历所有的子控件
     NSArray *subViews = self.subviews;
-    
+
     // 确定单个控件的大小
     CGFloat btnW = self.mj_w / count;
     CGFloat btnH = self.mj_h;
     CGFloat btnY = 0;
-    
+
     NSInteger index = 0;
-    
+
     for (UIView *subView in subViews) {
         if ([subView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-          
             CGFloat btnX = index * btnW;
             subView.frame = CGRectMake(btnX, btnY, btnW, btnH);
             index ++;
